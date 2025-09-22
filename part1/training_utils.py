@@ -61,11 +61,8 @@ def train_epoch(model, train_loader, optimizer, criterion, device, scheduler=Non
         # TODO[STUDENT]: 6) Update parameters
 
         
-        # Track metrics
-        total_loss += loss.item()
-        _, predicted = torch.max(output.data, 1)
-        total += target.size(0)
-        correct += (predicted == target).sum().item()
+        # TODO[STUDENT]: 7) Track metrics
+        
         
         if batch_idx % 50 == 0:
             print(f'Batch {batch_idx}/{len(train_loader)}, Loss: {loss.item():.4f}')
