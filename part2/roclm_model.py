@@ -505,7 +505,6 @@ class RocLMAttention(nn.Module):
         # Hint:
         # 1. Softmax converts scores to probabilities (sum to 1)
         # 2. Use float32 for numerical stability, then convert back
-        # 3. Apply dropout only during training
         
         
 
