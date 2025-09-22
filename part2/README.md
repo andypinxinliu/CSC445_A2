@@ -156,9 +156,7 @@ This will load a pre-trained checkpoint and run interactive demos.
 self.weight = nn.Parameter(torch.ones(hidden_size))
 
 # In RocLMRMSNorm.forward:
-variance = hidden_states.pow(2).mean(-1, keepdim=True)
-hidden_states = hidden_states * torch.rsqrt(variance + self.variance_epsilon)
-return self.weight * hidden_states.to(input_dtype)
+raise NotImplementedError("This function is not implemented")
 ```
 
 ### Step 2: SwiGLU MLP
@@ -169,7 +167,7 @@ self.up_proj = nn.Linear(self.hidden_size, self.intermediate_size, bias=False)
 self.down_proj = nn.Linear(self.intermediate_size, self.hidden_size, bias=False)
 
 # In RocLMMLP.forward:
-return self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+raise NotImplementedError("This function is not implemented")
 ```
 
 ### Step 3: Attention Mechanism
