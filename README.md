@@ -38,7 +38,7 @@ CSC445_HW2/
 2. **CUDA**: GPU support recommended for faster training (optional but highly recommended)
 3. **Git**: For version control
 
-### Git and GitHub Setup (macOS and Windows)
+### Git and GitHub Setup (macOS and Windows, Optional, if you want to use git to manage your code and do version control for debugging)
 
 Follow these steps to get set up with Git and GitHub and learn the basic workflow used in this class.
 
@@ -113,18 +113,12 @@ Type "yes" if prompted. You should see a success message.
 
 If you prefer HTTPS, you can skip SSH and use your GitHub credentials or a Personal Access Token when prompted.
 
-#### 5 Clone this repository
-- SSH (recommended):
+#### 5 Add this repository to your github (Please make it private)
+First, create a new repository on your github account. Then, add this repository to your github.
+Make sure it is private. Please do not use public repository to prevent cheating.
 ```bash
-git clone git@github.com:<your-org-or-user>/CSC445_HW2.git
-```
-- HTTPS:
-```bash
-git clone https://github.com/<your-org-or-user>/CSC445_HW2.git
-```
-Then:
-```bash
-cd CSC445_HW2
+git remote add origin git@github.com:<your-org-or-user>/<your-repository-name>.git
+git push -u origin main
 ```
 
 #### 6 Basic Git workflow you will use
