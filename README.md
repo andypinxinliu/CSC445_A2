@@ -8,7 +8,7 @@ This project consists of two comprehensive assignments that will give you hands-
 
 ```
 CSC445_HW2/
-├── part1/                          # Image Classification with Transfer Learning
+├── part1/                          # Image Classification to compare CNN and Transformer-based models
 │   ├── main.py                     # Main training script
 │   ├── data_utils.py               # Data loading utilities
 │   ├── model_utils.py              # Model setup utilities
